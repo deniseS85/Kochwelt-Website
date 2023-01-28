@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico">
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <title>Dampfnudeln</title>
+</head>
+<body onload="includeHTML()">
+    <div class="receiptContent">
+        <div w3-include-html="templates/header.html"></div>
+
+        <div class="headline">
+            <h1>Dampfnudeln</h1>
+        </div>
+
+        <div class="receipt">
+            <img class="receiptImg" src="img/dampfnudeln.png">
+        </div>
+
+        <div class="infoCookingUp">
+            <div class="icons">
+                <img src="img/icons/clock-regular.svg">
+                <div>90  Min.</div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icons/brain-solid.svg">
+                <div>normal</div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icons/calendar-alt-regular.svg">
+                <div>30.12.2022</div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icons/calendar-alt-regular.svg">
+                <div>175 kcal</div>
+            </div>
+        </div>
+        
+        <div class="portionsCalc">Zutaten für
+            <input id="input" type="number" min="1" value="1" onKeyDown="return false">
+            <button onclick="portions()" class="portions">Portionen</button>
+            <div class="addMinusButton">
+                <button onclick="addPortionResponsiv()" class="plus" id="plus">&#x2b;</button>
+                <button onclick="minusPortionResponsiv()" class="minus" id="minus">&#x2212;</button>
+            </div>
+        </div>
+
+        <table>
+            <tbody id="table" class="ingredients">
+                <tr>
+                    <td>100</td>
+                    <td>g</td>
+                    <td>Weizenmehl</td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>ml</td>
+                    <td>Milch</td>
+                </tr>
+                <tr>
+                    <td>0.25</td>
+                    <td>Würfel</td>
+                    <td>Hefe</td>
+                </tr>
+                <tr>
+                    <td>0.5</td>
+                    <td>EL</td>
+                    <td>Zucker</td>
+                </tr>
+                <tr><td>15</td>
+                    <td>g</td>
+                    <td>Butter</td>
+                </tr>
+                <tr>
+                    <td>0.5</td>
+                    <td>St</td>
+                    <td>Ei</td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>ml</td>
+                    <td>Sahne</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="preparationContainer">
+            <h2 class="preparation">Nährwerte für 1 Portion</h2>
+        </div>
+
+        <div class="infoCookingDown">
+            <div class="infoTime">
+                <div><b>Protein:</b>&ensp;1,7 g</div>
+            </div>
+            <div class="infoTime">
+                <div><b>Kohlenhydrate:</b>&ensp;25,6 g</div>
+            </div>
+            <div class="infoTime">
+                <div><b>Fett:</b>&ensp;12,4 g</div>
+            </div>
+        </div>
+
+        <div class="preparationContainer">
+            <h2 class="preparation">Zubereitung</h2>
+        </div>
+
+        <div class="infoCookingDown">
+            <div class="infoTime">
+                <img src="img/icons/clock-regular.svg">
+                <div>ca. 30 Min</div>
+            </div>
+            <div class="infoTime">
+                <img src="img/icons/clock-regular.svg">
+                <div>Fertig in ca. 90 Min</div>
+            </div>
+        </div>
+
+        <div class="preparationContent">
+            <p class="jusitify">Aus den oberen Zutaten einen weichen Hefeteig bereiten. 6-7 Stücke daraus machen, rund formen und gehen lassen.
+            Sahne mit Zucker im Topf oder Pfanne mit gut schließendem Deckel heiß machen und die gegangenen Nudeln einlegen.
+            Deckel schließen und ca. 25 min. kochen. Der Deckel darf nicht geöffnet werden. Die Nudeln sind fertig, wenn die Sahne eingekocht ist und es im Topf zu knistern beginnt.
+            Dazu schmeckt ein Kompott oder Vanillesoße.<br>
+            Guten Appetit!
+            </p>
+        </div>
+
+        <div class="endContainer">
+            <h3>Rezept erstellt von</h3>
+            <div class="profil">
+                <img src="img/profil_erwin.png">
+                <p>Erwin</p>
+            </div>
+            
+        </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+   
+</body>
+</html>

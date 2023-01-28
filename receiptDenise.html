@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico">
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <title>Kartoffelsalat</title>
+</head>
+<body onload="includeHTML()">
+    <div class="receiptContent">
+        <div w3-include-html="templates/header.html"></div>
+
+        <div class="headline">
+            <h1>Kartoffelsalat</h1>
+        </div>
+
+        <div class="receipt">
+            <img class="receiptImg" src="img/kartoffelsalat.jpeg">
+        </div>
+
+        <div class="infoCookingUp">
+            <div class="icons">
+                <img src="img/icons/clock-regular.svg">
+                <div>45 Min.</div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icons/brain-solid.svg">
+                <div>simpel</div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icons/calendar-alt-regular.svg">
+                <div>21.12.2022</div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icons/calendar-alt-regular.svg">
+                <div>143 kcal</div>
+            </div>
+        </div>
+        
+        <div class="portionsCalc">Zutaten für
+            <input id="input" type="number" min="1" value="1" onKeyDown="return false">
+            <button class="portions" onclick="portions()">Portionen</button>
+            <div class="addMinusButton">
+                <button onclick="addPortionResponsiv()" class="plus" id="plus">&#x2b;</button>
+                <button onclick="minusPortionResponsiv()" class="minus" id="minus">&#x2212;</button>
+            </div>
+        </div>
+
+        <table>
+            <tbody id="table" class="ingredients">
+                <tr>
+                    <td>2</td>
+                    <td>kg</td>
+                    <td>Kartoffeln</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Pck</td>
+                    <td>Speckwürfel</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td>Zwiebel</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>g</td>
+                    <td>Fleischsalat</td>
+                </tr>
+                <tr><td>2</td>
+                    <td></td>
+                    <td>gekochte Eier</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>EL</td>
+                    <td>Essig</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>EL</td>
+                    <td>Zucker</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>EL</td>
+                    <td>Öl</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Salz & Pfeffer</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="preparationContainer">
+            <h2 class="preparation">Nährwerte für 1 Portion</h2>
+        </div>
+
+        <div class="infoCookingDown">
+            <div class="infoTime">
+                <div><b>Protein:</b>&ensp;2,6 g</div>
+            </div>
+            <div class="infoTime">
+                <div><b>Kohlenhydrate:</b>&ensp;9,6 g</div>
+            </div>
+            <div class="infoTime">
+                <div><b>Fett:</b>&ensp;2,4 g</div>
+            </div>
+        </div>
+
+        <div class="preparationContainer">
+            <h2 class="preparation">Zubereitung</h2>
+        </div>
+
+        <div class="infoCookingDown">
+            <div class="infoTime">
+                <img src="img/icons/clock-regular.svg">
+                <div>ca. 20 Min</div>
+            </div>
+            <div class="infoTime">
+                <img src="img/icons/clock-regular.svg">
+                <div>Fertig in ca. 45 Min</div>
+            </div>
+        </div>
+
+        <div class="preparationContent">
+            <p class="jusitify">Kartoffeln gründlich waschen und kochen. In der Zwischenzeit, Zwiebeln kleinhacken und die Eier kochen.
+            Den Speck in einer Pfanne anbraten. Wenn die Kartoffeln fertig gekocht sind, die schälen und in Scheiben
+            schneiden. Kartoffeln, Speck, kleingehackte Eier, Zwiebel in eine Schüssel tun. Den Fleischsalat hinzugeben,
+            salzen und pfeffern. Zum Schluss noch Essig und Öl hinzugeben und alles vorsichtig umrühren. Den Kartoffelsalat
+            bei Zimmertemperatur ziehen lassen.<br>
+            Guten Appetit!
+            </p>
+        </div>
+
+        <div class="endContainer">
+            <h3>Rezept erstellt von</h3>
+            <div class="profil">
+                <img src="img/profil_denise.png">
+                <p>Denise</p>
+            </div>
+            
+        </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+
+   
+</body>
+</html>

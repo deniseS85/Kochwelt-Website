@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico">
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <title>Rinderfilet</title>
+</head>
+<body onload="includeHTML()">
+    <div class="receiptContent">
+        <div w3-include-html="templates/header.html"></div>
+
+        <div class="headline">
+            <h1>Rinderfilet</h1>
+        </div>
+
+        <div class="receipt">
+            <img class="receiptImg" src="img/rinderfilet2.jpeg">
+        </div>
+
+        <div class="infoCookingUp">
+            <div class="icons">
+                <img src="img/icons/clock-regular.svg">
+                <div>ca. 50 Min.</div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icons/brain-solid.svg">
+                <div>normal</div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icons/calendar-alt-regular.svg">
+                <div>29.12.2022</div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icons/calendar-alt-regular.svg">
+                <div>940 kcal</div>
+            </div>
+        </div>
+        
+        <div class="portionsCalc">Zutaten für
+            <input id="input" type="number" min="1" value="1" onKeyDown="return false">
+            <button onclick="portions()" class="portions">Portionen</button>
+            <div class="addMinusButton">
+                <button onclick="addPortionResponsiv()" class="plus" id="plus">&#x2b;</button>
+                <button onclick="minusPortionResponsiv()" class="minus" id="minus">&#x2212;</button>
+            </div>
+        </div>
+
+        <table>
+            <tbody id="table" class="ingredients">
+                <tr>
+                    <td>600</td>
+                    <td>g</td>
+                    <td>Rinderfilet vom Mittelstück</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>g</td>
+                    <td>Bohnen</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>g</td>
+                    <td>Speck</td>
+                </tr>
+                <tr>
+                    <td>600</td>
+                    <td>g</td>
+                    <td>Kartoffeln</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Prise</td>
+                    <td>Knoblauchpfeffer</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Zweig</td>
+                    <td>Rosmarin</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td>Schalotten</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td>Wachholderbeeren</td>
+                </tr>
+                <tr>
+                    <td>150</td>
+                    <td>g</td>
+                    <td>Portwein</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Salz und Pfeffer</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="preparationContainer">
+            <h2 class="preparation">Nährwerte für 1 Portion</h2>
+        </div>
+
+        <div class="infoCookingDown">
+            <div class="infoTime">
+                <div><b>Protein:</b>&ensp;19,1 g</div>
+            </div>
+            <div class="infoTime">
+                <div><b>Kohlenhydrate:</b>&ensp;18,0 g</div>
+            </div>
+            <div class="infoTime">
+                <div><b>Fett:</b>&ensp;10,9 g</div>
+            </div>
+        </div>
+
+        <div class="preparationContainer">
+            <h2 class="preparation">Zubereitung</h2>
+        </div>
+
+        <div class="infoCookingDown">
+            <div class="infoTime">
+                <img src="img/icons/clock-regular.svg">
+                <div>ca. 20 Min</div>
+            </div>
+            <div class="infoTime">
+                <img src="img/icons/clock-regular.svg">
+                <div>Fertig in ca. 1 Std.</div>
+            </div>
+        </div>
+
+        <div class="preparationContent">
+            <p class="jusitify">Bohnen putzen und in Salzwasser 3 Minuten garen, 
+                danach kalt abschrecken. Bohnen mit je einer Scheibe Speck umwickeln. Kartoffeln 
+                vierteln. Rosmarin waschen, grob hacken und Kartoffeln mit Salz, Pfeffer, Rosmarin 
+                und Öl marinieren. Rinderfilet in heissem Butterschmalz von allen Seiten kurz anbraten
+                und im Ofen ca. 30 Minuten auf 50/55°Grad garen. 
+                Kartoffelspalten in die Friteusse geben. Schalotten schälen und in Spalten schneiden. 
+                Im Filetbratfett anbraten und mit Zucker bestreuen, etwas karamellisieren und mit Portwein 
+                ablöschen. Wacholderbeeren dazugeben und alles bis auf die Hälfte einreduzieren! Mit Knoblauchpfeffer und Pfeffer 
+                abschmecken! Rinderfilet aus dem Ofen nehmen und noch 5 Minuten in Alufolie ziehen lassen! In der Zwischenzeit 
+                Bohnen in einer Pfanne in etwas Butter anbrutzeln und dann mit den Kartoffelecken auf dem Teller verteilen! 
+            Guten Appetit!
+            </p>
+        </div>
+
+        <div class="endContainer">
+            <h3>Rezept erstellt von</h3>
+            <div class="profil">
+                <img src="img/profil_denise.png">
+                <p>Denise</p>
+            </div>
+            
+        </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+   
+</body>
+</html>

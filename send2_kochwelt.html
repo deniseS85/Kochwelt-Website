@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Kontakt</title>
+</head>
+
+<body onload="includeHTML()">
+    <div class="contentComplete">
+        <div w3-include-html="templates/header.html"></div>
+
+        <div class="send2">
+            <!-- <p style="background-image: url("pexels_background_kontact_us.jpg");"> -->
+            <form action="https://gruppe-409.developerakademie.net/kochwelt/send_mail_kochwelt.php" method="post"
+                class="kontakt">
+                <input required class="send2-contact-field send2-mobile-name" name="name"
+                    placeholder="Namen und E-Mail eingeben!">
+                <textarea required class="send2-text-field send2-mobile-text" name="message"
+                    placeholder="Schreib uns Deine Wünsche und Anregungen!"></textarea>
+                <button type="submit">Send E-Mail</button>
+            </form>
+        </div>
+        <div w3-include-html="templates/footer.html"></div>
+    </div>
+
+</body>
+
+</html>

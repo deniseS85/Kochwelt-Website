@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico">
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <title>Bauerntopf</title>
+</head>
+<body onload="includeHTML()">
+    <div class="receiptContent">
+        <div w3-include-html="templates/header.html"></div>    
+
+        <div class="headline">
+            <h1>Bauerntopf</h1>
+        </div>
+
+        <div class="receipt">
+            <img class="receiptImg" src="img/goulash.jpg">
+        </div>
+
+        <div class="infoCookingUp">
+            <div class="icons">
+                <img src="img/icons/clock-regular.svg">
+                <div>15 Min.</div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icons/brain-solid.svg">
+                <div>normal</div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icons/calendar-alt-regular.svg">
+                <div>22.12.2022</div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icons/calendar-alt-regular.svg">
+                <div>282 kcal</div>
+            </div>
+        </div>
+
+        <div class="portionsCalc">Zutaten für
+            <input id="input" type="number" min="1" value="1" onKeyDown="return false">
+            <button onclick="portions()" class="portions">Portionen</button>
+            <div class="addMinusButton">
+                <button onclick="addPortionResponsiv()" class="plus" id="plus">&#x2b;</button>
+                <button onclick="minusPortionResponsiv()" class="minus" id="minus">&#x2212;</button>
+            </div>
+        </div>
+
+        <table>
+            <tbody id="table" class="ingredients">
+                <tr>
+                    <td>130</td>
+                    <td>g</td>
+                    <td>Rinderhackfleisch</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>g</td>
+                    <td>Karotten</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td>Paprika</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td>Zwiebel</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>g</td>
+                    <td>Tomatenmark</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>ml</td>
+                    <td>Gemüsebrühe</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>EL</td>
+                    <td>Crème fraîche</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Salz & Pfeffer</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="preparationContainer">
+            <h2 class="preparation">Nährwerte für 1 Portion</h2>
+        </div>
+
+        <div class="infoCookingDown">
+            <div class="infoTime">
+                <div><b>Protein:</b>&ensp;2,7 g</div>
+            </div>
+            <div class="infoTime">
+                <div><b>Kohlenhydrate:</b>&ensp;11 g</div>
+            </div>
+            <div class="infoTime">
+                <div><b>Fett:</b>&ensp;3,7 g</div>
+            </div>
+        </div>
+
+        <div class="preparationContainer">
+            <h2 class="preparation">Zubereitung</h2>
+        </div>
+
+        <div class="infoCookingDown">
+            <div class="infoTime">
+                <img src="img/icons/clock-regular.svg">
+                <div>ca. 15 Min</div>
+            </div>
+            <div class="infoTime">
+                <img src="img/icons/clock-regular.svg">
+                <div>Fertig in ca. 70 Min</div>
+            </div>
+        </div>
+
+        <div class="preparationContent">
+            <p class="jusitify">Brate das Hackfleisch in einm großen Topf an. Schäle die Karotten und schneide sie in Scheiben.
+                Nun gebe alles in den Topf und vermische die Zutaten gut.
+                Mit der Brühe wird alles abgelöscht und danach aufgekocht.
+                Der Bauerntopf sollte 40 Minuten bei geringer Hitze köcheln.
+                Unsere Empfehlung ist die Zubereitung im Slow-Cooker bei niedigster Stufe
+                für 6 Stunden.<br>
+                Guten Appetit!
+            </p>
+        </div>
+
+        <div class="endContainer">
+            <h3>Rezept erstellt von</h3>
+            <div class="profil">
+                <img src="img/profil_carmen.jpg">
+                <p>Carmen</p>
+            </div>
+
+        </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+
+</body>
+
+</html>

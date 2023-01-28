@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Kochwelt</title>
+</head>
+
+<body onload="includeHTML()">
+    <div class="contentComplete">
+        <div w3-include-html="templates/header.html"></div>
+
+        <div class="firstBox">
+            <img class="tenderloin_img" src="img/rinderfilet.jpeg">
+            
+            <div class="content_firstBox">
+                <h2 class="headline_tenderloin">Rinderfilet</h2>
+                <p class="jusitify"><b>Das perfekte Steak – saftig, zart und aromatisch.</b>
+                    Steak braten ist eine Kunst, vor allem, wenn es außen schön knusprig und würzig werden 
+                    soll und innen herrlich zart und aromatisch. Neben qualitativ hochwertigem Fleisch 
+                    und Gewürzen, sind auch die Kerntemperatur, sowie die Wahl der richtigen Pfanne fürs 
+                    Gelingen ausschlaggebend. Wir sagen euch, wie ihr das perfekte Steak zubereiten könnt.</p>
+                <button><a href="receiptTenderloin.html">Rezept öffnen</a></button>
+            </div>
+            
+        </div>
+            
+        <div class="somethingNewBox">
+            <h2>Lust auf was Neues?</h2>
+            <div class="food-pictures">
+                <div class="pictureText">
+                    <a href="receiptDenise.html">
+                        <img src="img/kartoffelsalat.jpeg"></a><b>Kartoffelsalat</b>
+                </div>
+                <div class="pictureText">
+                    <a href="receiptCarmen.html"> 
+                        <img src="img/goulash.jpg"></a><b>Bauerntopf</b>
+                </div>
+                <div class="pictureText">
+                    <a href="receiptErwin.html">
+                        <img src="img/dampfnudeln.png"></a><b>Dampfnudeln</b>
+                </div>
+                <div class="pictureText">
+                    <a href="receiptMatthias.html">
+                        <img src="img/kaspressknödel.jpg"></a><b>Kaspressknödel</b>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Olivenöl - das wertvolle Öl für die gesunde Küche</h2>
+            <div class="cooking_infos">
+                <div>
+                    <p>Ein gesundes Öl für die Küche, was den Blutruck regulieren kann, den
+                        Cholesterinspiegel senkt und trotzdem noch gesund ist? Wer will diese 
+                        Geheimzutat, die darüber hinaus noch vorzüglich schmeckt nicht selbst verwenden? 
+                        Olivenöl hat seine besonderen Vorzüge in der Vewendung
+                        in unserer kalten Küche. Aber auch zum Braten und zum Dünsten ist es bestens geeignet. 
+                        Lese mehr über das wertvolle Olivenöl und dessen Verwendung.
+                    </p> 
+                    <button><a href="nice2know.html">Weiterlesen...</a></button>
+                </div>
+                <div class="food-pictures-initial">
+                        <img src="img/olive3.jpg" alt="oliveoel">
+                </div>
+            </div>
+           
+        </div>
+
+        <div w3-include-html="templates/footer.html"></div>
+    </div>
+</body>
+</html>
